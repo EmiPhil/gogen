@@ -1,4 +1,4 @@
-package code
+package gogen
 
 import "github.com/EmiPhil/gogen/texts"
 

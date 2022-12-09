@@ -1,17 +1,19 @@
 package golang
 
-import "github.com/EmiPhil/gogen/code"
+import (
+	"github.com/EmiPhil/gogen"
+)
 
 // Script represents a go file
 type Script struct {
 	PackageName string
-	*code.Script
+	*gogen.Script
 }
 
 func New(packageName string) *Script {
 	script := new(Script)
 	script.PackageName = packageName
-	script.Script = code.MakeGoScript()
+	script.Script = gogen.MakeGoScript()
 
 	script.WriteHeader()
 	return script

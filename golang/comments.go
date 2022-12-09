@@ -1,16 +1,16 @@
 package golang
 
 import (
-	"github.com/EmiPhil/gogen/code"
+	"github.com/EmiPhil/gogen"
 	"strings"
 )
 
-func WriteComment(container code.Container, multilineComment string) {
+func WriteComment(container gogen.Container, multilineComment string) {
 	WriteComments(container, strings.Split(multilineComment, "\n"))
 }
 
-func WriteComments(container code.Container, comments []string) {
+func WriteComments(container gogen.Container, comments []string) {
 	for _, comment := range comments {
-		container.Line(code.Comment).SetValue(comment)
+		container.Line(gogen.Comment).SetValue(comment)
 	}
 }

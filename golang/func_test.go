@@ -1,7 +1,7 @@
 package golang
 
 import (
-	"github.com/EmiPhil/gogen/code"
+	"github.com/EmiPhil/gogen"
 	"reflect"
 	"testing"
 )
@@ -11,7 +11,7 @@ func TestFunc_SetLeftBracketPrefix(t *testing.T) {
 		Name    string
 		Params  []string
 		Returns []string
-		Block   *code.Block
+		Block   *gogen.Block
 	}
 	tests := []struct {
 		name   string

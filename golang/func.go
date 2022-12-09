@@ -2,7 +2,7 @@ package golang
 
 import (
 	"fmt"
-	"github.com/EmiPhil/gogen/code"
+	"github.com/EmiPhil/gogen"
 	"github.com/EmiPhil/gogen/texts"
 )
 
@@ -32,7 +32,7 @@ type Func struct {
 	Params  Params
 	Returns Returns
 
-	*code.Block
+	*gogen.Block
 }
 
 func (fn *Func) SetLeftBracketPrefix() {

@@ -1,4 +1,4 @@
-package code
+package gogen
 
 // Code represents a script, block, or line
 type Code interface {
